@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FD4859A91EC0FEF2009E3C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859A81EC0FEF2009E3C2B /* AppDelegate.swift */; };
-		FD4859AB1EC0FEF2009E3C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859AA1EC0FEF2009E3C2B /* ViewController.swift */; };
 		FD4859AE1EC0FEF2009E3C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4859AC1EC0FEF2009E3C2B /* Main.storyboard */; };
 		FD4859B01EC0FEF2009E3C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4859AF1EC0FEF2009E3C2B /* Assets.xcassets */; };
 		FD4859B31EC0FEF2009E3C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4859B11EC0FEF2009E3C2B /* LaunchScreen.storyboard */; };
 		FD4859BE1EC0FEF2009E3C2B /* RepublicaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859BD1EC0FEF2009E3C2B /* RepublicaAppTests.swift */; };
 		FD4859C91EC0FEF2009E3C2B /* RepublicaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859C81EC0FEF2009E3C2B /* RepublicaAppUITests.swift */; };
+		FD4859D91EC10158009E3C2B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859D81EC10158009E3C2B /* Session.swift */; };
+		FD4859DB1EC1029C009E3C2B /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859DA1EC1029C009E3C2B /* Speaker.swift */; };
+		FD4859DD1EC1038F009E3C2B /* SessionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859DC1EC1038F009E3C2B /* SessionTableViewController.swift */; };
+		FD4859E01EC10479009E3C2B /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859DF1EC10479009E3C2B /* SessionTableViewCell.swift */; };
+		FD4A20F71EC1246100A6DF07 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4859AA1EC0FEF2009E3C2B /* SessionDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		FD4859A51EC0FEF2009E3C2B /* RepublicaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepublicaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4859A81EC0FEF2009E3C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD4859AA1EC0FEF2009E3C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD4859AA1EC0FEF2009E3C2B /* SessionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		FD4859AD1EC0FEF2009E3C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD4859AF1EC0FEF2009E3C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4859B21EC0FEF2009E3C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		FD4859C41EC0FEF2009E3C2B /* RepublicaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepublicaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4859C81EC0FEF2009E3C2B /* RepublicaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepublicaAppUITests.swift; sourceTree = "<group>"; };
 		FD4859CA1EC0FEF2009E3C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4859D81EC10158009E3C2B /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FD4859DA1EC1029C009E3C2B /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		FD4859DC1EC1038F009E3C2B /* SessionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewController.swift; sourceTree = "<group>"; };
+		FD4859DF1EC10479009E3C2B /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				FD4859A81EC0FEF2009E3C2B /* AppDelegate.swift */,
-				FD4859AA1EC0FEF2009E3C2B /* ViewController.swift */,
+				FD4859AA1EC0FEF2009E3C2B /* SessionDetailViewController.swift */,
+				FD4859DC1EC1038F009E3C2B /* SessionTableViewController.swift */,
+				FD4859DF1EC10479009E3C2B /* SessionTableViewCell.swift */,
+				FD4859DE1EC103A2009E3C2B /* Model */,
 				FD4859AC1EC0FEF2009E3C2B /* Main.storyboard */,
 				FD4859AF1EC0FEF2009E3C2B /* Assets.xcassets */,
 				FD4859B11EC0FEF2009E3C2B /* LaunchScreen.storyboard */,
@@ -123,6 +134,15 @@
 				FD4859CA1EC0FEF2009E3C2B /* Info.plist */,
 			);
 			path = RepublicaAppUITests;
+			sourceTree = "<group>";
+		};
+		FD4859DE1EC103A2009E3C2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD4859D81EC10158009E3C2B /* Session.swift */,
+				FD4859DA1EC1029C009E3C2B /* Speaker.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4859AB1EC0FEF2009E3C2B /* ViewController.swift in Sources */,
+				FD4A20F71EC1246100A6DF07 /* SessionDetailViewController.swift in Sources */,
+				FD4859E01EC10479009E3C2B /* SessionTableViewCell.swift in Sources */,
 				FD4859A91EC0FEF2009E3C2B /* AppDelegate.swift in Sources */,
+				FD4859DD1EC1038F009E3C2B /* SessionTableViewController.swift in Sources */,
+				FD4859D91EC10158009E3C2B /* Session.swift in Sources */,
+				FD4859DB1EC1029C009E3C2B /* Speaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +540,7 @@
 				FD4859CF1EC0FEF2009E3C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD4859D01EC0FEF2009E3C2B /* Build configuration list for PBXNativeTarget "RepublicaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				FD4859D21EC0FEF2009E3C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD4859D31EC0FEF2009E3C2B /* Build configuration list for PBXNativeTarget "RepublicaAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +558,7 @@
 				FD4859D51EC0FEF2009E3C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
