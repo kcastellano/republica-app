@@ -29,7 +29,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lGK-AQ-se1">
                                             <rect key="frame" x="0.0" y="0.0" width="367" height="118"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kate_castellano" translatesAutoresizingMaskIntoConstraints="NO" id="seR-BN-VrR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="seR-BN-VrR">
                                                     <rect key="frame" x="0.0" y="0.0" width="127" height="118"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="118" id="08Y-0a-bLo"/>
@@ -87,7 +87,6 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RHd-eY-nn3">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="Adr-Bo-ezk"/>
                                         </constraints>
@@ -119,7 +118,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Ct9-5K-Quu" secondAttribute="trailing" id="3oF-t8-IQb"/>
                                             <constraint firstItem="Ct9-5K-Quu" firstAttribute="leading" secondItem="ege-jT-Y0U" secondAttribute="leading" id="WAc-l5-YYI"/>
@@ -234,7 +232,4 @@
             <point key="canvasLocation" x="84" y="148.87556221889056"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="kate_castellano" width="300" height="300"/>
-    </resources>
 </document>

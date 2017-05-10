@@ -22,20 +22,6 @@ class SessionDetailViewController: UIViewController {
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     var selectedSession: Session?
-
-    // This allows you to initialise your custom UIViewController without a nib or bundle.
-    convenience init() {
-        self.init(nibName:nil, bundle:nil)
-    }
-    
-    // This extends the superclass.
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,17 +29,21 @@ class SessionDetailViewController: UIViewController {
     }
     
     func setSessionInformation() {
-        self.sessionNameLabel.text = selectedSession?.name
-        self.sessionShortThesisTextView.text = selectedSession?.shortThesis
-        self.sessionLanguageLabel.text = selectedSession?.language
-        self.sessionLevelLabel.text = selectedSession?.sessionLevel.rawValue
-        self.sessionTypeLabel.text = selectedSession?.sessionType.rawValue
+        guard let selectedSession = self.selectedSession else {
+            return
+        }
+            
+        self.sessionNameLabel.text = selectedSession.name
+        self.sessionShortThesisTextView.text = selectedSession.shortThesis
+        self.sessionLanguageLabel.text = selectedSession.language
+        self.sessionLevelLabel.text = selectedSession.sessionLevel.rawValue
+        self.sessionTypeLabel.text = selectedSession.sessionType.rawValue
         
-        self.photoImageView.image = selectedSession?.speaker.photo
-        self.speakerNameLabel.text = selectedSession?.speaker.name
-        self.speakerOcupationLabel.text = selectedSession?.speaker.ocupation
+        self.photoImageView.image = selectedSession.speaker.photo
+        self.speakerNameLabel.text = selectedSession.speaker.name
+        self.speakerOcupationLabel.text = selectedSession.speaker.ocupation
         
-        let sessionLevel = selectedSession!.sessionLevel
+        let sessionLevel = selectedSession.sessionLevel
         
         switch sessionLevel {
         case .beginner:
